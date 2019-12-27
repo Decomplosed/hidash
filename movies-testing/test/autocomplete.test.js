@@ -7,6 +7,7 @@ const waitFor = async (selector) => {
     }, 30)
 
     const timeout = setTimeout(() => {
+      clearInterval(interval)
       reject()
     }, 2000)
   })
