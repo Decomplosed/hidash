@@ -1,3 +1,4 @@
+const assert = require('assert')
 const { forEach, map } = require('./index')
 
 const test = (desc, fn) => {
