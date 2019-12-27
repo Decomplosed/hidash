@@ -1,4 +1,4 @@
-it('Shows an autocomplete', () => {
+beforeEach(() => {
   createAutoComplete({
     root: document.querySelector('#target'),
     fetchData() {
@@ -12,6 +12,10 @@ it('Shows an autocomplete', () => {
       return movie.Title
     }
   })
+})
+
+it('Shows an autocomplete', () => {
+
 
   const dropdown = document.querySelector('.dropdown')
 
@@ -19,5 +23,5 @@ it('Shows an autocomplete', () => {
 })
 
 it('After searching, dropdown opens up', () => {
-  
+
 })
