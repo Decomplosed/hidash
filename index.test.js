@@ -25,21 +25,7 @@ test('Test for map', () => {
     return value * 2
   })
 
-  if (result[0] !== 2) {
-    throw new Error(`Expected to find 2, but found ${result[0]}`)
-  } else {
-    console.log('All good! :)')
-  }
-
-  if (result[1] !== 4) {
-    throw new Error(`Expected to find 4, but found ${result[1]}`)
-  } else {
-    console.log('All good! :)')
-  }
-
-  if (result[2] !== 6) {
-    throw new Error(`Expected to find 6, but found ${result[2]}`)
-  } else {
-    console.log('All good! :)')
-  }
+  assert.strictEqual(result[0], 2)
+  assert.strictEqual(result[1], 4)
+  assert.strictEqual(result[2], 6)
 })
