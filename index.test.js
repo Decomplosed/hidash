@@ -25,7 +25,9 @@ test('Test for map', () => {
     return value * 2
   })
 
-  assert.strictEqual(result[0], 2)
-  assert.strictEqual(result[1], 4)
-  assert.strictEqual(result[2], 6)
+  assert.deepStrictEqual(result, [2, 4, 6])
+
+  // assert.strictEqual(result[0], 2)
+  // assert.strictEqual(result[1], 4)
+  // assert.strictEqual(result[2], 6)
 })
