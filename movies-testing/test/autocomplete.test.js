@@ -15,9 +15,7 @@ beforeEach(() => {
   })
 })
 
-it('Shows an autocomplete', () => {
-
-
+it('Dropdown starts closed', () => {
   const dropdown = document.querySelector('.dropdown')
 
   expect(dropdown.className).not.to.include('is-active')
