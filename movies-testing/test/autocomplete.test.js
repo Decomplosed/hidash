@@ -48,3 +48,7 @@ it('After searching, dropdown opens up', async () => {
 
   expect(dropdown.className).to.include('is-active')
 })
+
+it('After searching, displays some results', () => {
+  
+})
