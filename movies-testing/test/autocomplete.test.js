@@ -1,4 +1,4 @@
-const waitFor = async (selector) => {
+const waitFor = (selector) => {
   return new Promise((resolve, reject) => {
     const interval = setInterval(() => {
       if (document.querySelector(selector)) {
