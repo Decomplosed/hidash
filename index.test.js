@@ -17,11 +17,7 @@ test('Test for forEach', () => {
     sum += value
   })
 
-  if (sum !== 6) {
-    throw new Error('Expected summing array to equal 6')
-  } else {
-    console.log('All good! :)')
-  }
+  assert.strictEqual(sum, 6, 'Expected forEach to sum the array')
 })
 
 test('Test for map', () => {
