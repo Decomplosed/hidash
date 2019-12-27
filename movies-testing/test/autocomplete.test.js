@@ -1,4 +1,5 @@
 beforeEach(() => {
+  document.querySelector('#taget').innerHTML = ''
   createAutoComplete({
     root: document.querySelector('#target'),
     fetchData() {
