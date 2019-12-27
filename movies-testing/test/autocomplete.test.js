@@ -22,5 +22,11 @@ it('Dropdown starts closed', () => {
 })
 
 it('After searching, dropdown opens up', () => {
+  const input = document.querySelector('input')
+  input.value = 'avengers'
+  input.dispatchEvent(new Event('input'))
 
+  const dropdown = document.querySelector('.dropdown')
+
+  expect(dropdown.className).to.include('is-active')
 })
