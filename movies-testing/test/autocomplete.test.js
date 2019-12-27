@@ -2,6 +2,8 @@ const waitFor = async (selector) => {
   return new Promise((resolve, reject) => {
     const interval = setInterval(() => {
       if (document.querySelector(selector)) {
+        clearInterval(interval)
+        clearTimeout(timeout)
         resolve()
       }
     }, 30)
