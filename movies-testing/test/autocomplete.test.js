@@ -1,5 +1,11 @@
 const waitFor = async (selector) => {
-  
+  return new Promise((resolve, reject) => {
+    setInterval(() => {
+      if(document.querySelector(selector)) {
+        resolve()
+      } 
+    }, 30)
+  })
 }
 
 beforeEach(() => {
