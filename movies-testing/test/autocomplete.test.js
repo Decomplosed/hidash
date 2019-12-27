@@ -7,6 +7,9 @@ it('Shows an autocomplete', () => {
         { Title: 'Not Avengers' },
         { Title: 'Some other movie' }
       ]
+    },
+    renderOption(movie) {
+      return movie.Title
     }
   })
 })
